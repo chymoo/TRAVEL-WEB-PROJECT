@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Travel Guide</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f4f8;
+      color: #444;
+    }
+
+    /* Navigation Bar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #003366;
+      padding: 0.5rem 2rem; /* Adjusted padding */
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Logo styling */
+    nav .logo {
+      height: 80px; /* Adjusted logo size */
+      width: auto;
+      margin-right: 20px;
+    }
+
+    /* Flex container for links */
+    nav .nav-links {
+      display: flex;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.3rem; /* Increased font size for links */
+      margin-right: 2rem;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff6f61;
+      border-bottom: 2px solid #ff6f61;
+      transform: scale(1.1);
+    }
+
+    nav a.active {
+      color: #ff6f61;
+      font-weight: bold;
+      border-bottom: 2px solid #ff6f61;
+    }
+
+    /* Header Section */
+    header {
+      position: relative;
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStveRc1u3WMlrUXcQ1NoqVEduevMuzPAOs7g&s');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 7rem 2rem 4rem;
+      text-align: center;
+      background-blur: 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 4.5rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Section Styles for Separation */
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+      margin: 3rem auto;
+      background-color: #ffffff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      max-width: 1200px; /* Centering the section and limiting width */
+    }
+
+    section h2 {
+      font-size: 3rem;
+      color: #003366;
+      margin-bottom: 1.5rem;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    .key-features ul {
+      list-style-type: none;
+      padding-left: 0;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      text-align: left;
+      margin-top: 2rem;
+    }
+
+    .key-features li {
+      margin-bottom: 1.2rem;
+    }
+
+    .key-features li::before {
+      content: "✔️";
+      margin-right: 0.8rem;
+      color: #003366;
+    }
+
+    /* Highlight Text */
+    .highlight {
+      font-weight: bold;
+      color: #003366;
+    }
+
+    .highlight-email {
+      font-weight: bold;
+      color: #ff6f61;
+    }
+
+    /* Divider Styles */
+    .divider {
+      width: 80%;
+      margin: 2rem auto;
+      border-top: 3px solid #ff6f61;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 1rem;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+
+        <!-- Navigation Bar -->
+        <nav>
+          <div class="nav-links">
+            <img src="C:\Users\USER\Downloads\travel_guide_logo-removebg-preview (1).png" alt="Travel Guide Logo" class="logo" onclick="window.location.href='home TRAVEL WEB PROJECT.html'">
+            <a href="home TRAVEL WEB PROJECT.html">Home</a>
+            <a href="TRAVEL WEB PROJECT.html">Purpose</a>
+          </div>
+          <a href="About%20TRAVEL%20WEB%20PROJECT.html" class="active">About</a>
+        </nav>
+      
+        <!-- Header Section -->
+        <header>
+          <h1>Welcome to Travel Guide</h1>
+          <p>Your one-stop destination for planning unforgettable journeys</p>
+        </header>
+      
+        <!-- Main Content Section 1 -->
+        <section>
+          <h2>Why Travel With Us? 🌍✈️</h2>
+          <p>We make your travel dreams come true by offering the best experiences, personalized to your preferences. Whether you’re looking for a <span class="highlight">romantic honeymoon</span>, a <span class="highlight">family vacation</span>, <span class="highlight">cultural exploration</span>, or <span class="highlight">solo adventures</span>, we’ve got you covered!</p>
+        </section>
+      
+        <!-- Divider -->
+        <div class="divider"></div>
+      
+        <!-- Key Features Section -->
+        <section>
+          <h2>Key Features 🔑</h2>
+          <div class="key-features">
+            <ul>
+              <li><strong>Home Page:</strong> A warm welcome and a personalized travel experience right at your fingertips.</li>
+              <li><strong>Quick Search:</strong> Find the perfect getaway by specifying destination, duration, and number of travelers.</li>
+              <li><strong>Purpose-Driven Pages:</strong> Tailored travel options for Honeymoons, Family Vacations, Beach Escapes, and Cultural Exploration.</li>
+              <li><strong>Destination Highlights:</strong> Explore in-depth destination guides with easy booking options and insider tips.</li>
+            </ul>
+          </div>
+        </section>
+      
+        <!-- Divider -->
+        <div class="divider"></div>
+      
+        <!-- Our Mission Section -->
+        <section>
+          <h2>Our Mission 🎯</h2>
+          <p>At Travel Guide, our mission is simple: we want to inspire your wanderlust and simplify the travel planning process. We curate unique travel experiences that cater to your needs, preferences, and dreams. Let us help you turn every journey into an unforgettable adventure.</p>
+        </section>
+      
+        <!-- Divider -->
+        <div class="divider"></div>
+      
+        <!-- Contact Section -->
+        <section>
+          <h2>Need Assistance? 💬</h2>
+          <p>If you have any questions or need support with your travel plans, we’re here to help!</p>
+          <p><span class="highlight-email">Email us:</span> <a href="mailto:john@travel.guide">john@travel.guide</a></p>
+          <p>We look forward to assisting you in making your next trip the best one yet!</p>
+        </section>
+      
+        <!-- Footer Section -->
+        <footer>
+          <p>&copy; 2024 Travel Guide. All rights reserved.</p>
+        </footer>
+      </body>
+      </html>
+

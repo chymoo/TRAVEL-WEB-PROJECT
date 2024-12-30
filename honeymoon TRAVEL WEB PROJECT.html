@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honeymoon - Travel Guide</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7fc;
+      color: #333;
+    }
+
+    /* Navigation Bar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #003366;
+      padding: 0.5rem 2rem;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav .logo {
+      height: 80px;
+      width: auto;
+      margin-right: 20px;
+    }
+
+    nav .nav-links {
+      display: flex;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.3rem;
+      margin-right: 2rem;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff6f61;
+      border-bottom: 2px solid #ff6f61;
+      transform: scale(1.1);
+    }
+
+    nav a.active {
+      color: #ff6f61;
+      font-weight: bold;
+      border-bottom: 2px solid #ff6f61;
+    }
+
+    /* Header Section */
+    header {
+      position: relative;
+      background-image: url('https://img.freepik.com/free-photo/freezing-wedding-couple-is-warming-up-together-winter-mountains-front-frozen-lake_8353-11090.jpg?ga=GA1.1.163804140.1731760303&semt=ais_hybrid');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    header h1,
+    header p {
+      position: relative;
+      z-index: 2;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 4rem;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+      margin-top: 4rem;
+      font-size: 1rem;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      nav a {
+        font-size: 1rem;
+        margin-right: 1rem;
+      }
+
+      header {
+        padding: 4rem 1rem;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      header p {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="nav-links">
+        <img src="C:\Users\USER\Downloads\travel_guide_logo-removebg-preview (1).png" alt="Travel Guide Logo" class="logo" alt="Travel Guide Logo" class="logo">
+        <a href="home TRAVEL WEB PROJECT.html">Home</a>
+        <a href="TRAVEL WEB PROJECT.html">Purpose</a>
+      </div>
+      <a href="About%20TRAVEL%20WEB%20PROJECT.html">About</a>
+    </nav>
+    
+    <!-- Header Section -->
+    <header>
+      <div class="overlay"></div>
+      <h1>Welcome to honeymoon propositions</h1>
+    </header>
+  
+    <!-- Honeymoon Trip Section -->
+    <!-- Honeymoon Trip Section -->
+<!-- Honeymoon Trip Section -->
+ <center>
+<section style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 3rem; background-color: #f9f9f9;">
+    <div style="flex: 1; max-width: 400px; margin: 1rem;">
+        <img src="https://img.freepik.com/free-photo/happy-couple-having-wine-with-view-eiffel-tower_181624-33226.jpg?ga=GA1.1.163804140.1731760303&semt=ais_hybrid" 
+             alt="Honeymoon in Paris" 
+             style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); max-height: 300px; object-fit: cover;">
+    </div>
+    <div style="flex: 1; max-width: 600px; margin: 1rem; color: #333; background-color: #fff; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); position: relative;">
+        <h2 style="font-size: 2rem; color: #003366; margin-bottom: 1rem;">Paris: The City of Love</h2>
+        <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 1rem;">
+            Experience the romance of Paris with dreamy strolls along the Seine, breathtaking views from the Eiffel Tower, and intimate dinners in charming bistros. 
+        </p>
+        <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 1rem;">
+            <b>The City of Love awaits to make your honeymoon unforgettable. 💕</b>
+        </p>
+        <a href="booking.php?image=<?php echo urlencode($destination['image']); ?>&name=<?php echo urlencode($destination['name']); ?>&description=<?php echo urlencode($destination['description']); ?" 
+           style="display: inline-block; text-decoration: none; padding: 0.8rem 2rem; 
+           background-color: #ff6f61; color: white; font-size: 1.2rem; border-radius: 5px; 
+           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); position: absolute; top: 50%; 
+           right: -30%; transform: translateY(-50%);">
+            Book Now
+        </a>
+    </div>
+</section>
+
+<a href="#" 
+   style="display: inline-block; text-decoration: none; padding: 0.8rem 2rem; 
+   background-color: #ff6f61; color: white; font-size: 1.2rem; border-radius: 5px; 
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); position: absolute; top: 50%; 
+   right: -30%; transform: translateY(-50%);">
+    Book Now
+</a>
+</center>
+
+<center>
+    <section style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 3rem; background-color: #f9f9f9;">
+        <div style="flex: 1; max-width: 400px; margin: 1rem;">
+            <img src="https://img.freepik.com/free-photo/elegant-venetian-carnival-composition_23-2147852273.jpg?t=st=1732050273~exp=1732053873~hmac=25abd22e3f8bcd8eedbb16bb52d6c00483c7f7a07fae1ca8bb98386096672871&w=1060" 
+                 alt="Honeymoon in Venice" 
+                 style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); max-height: 300px; object-fit: cover;">
+        </div>
+        <div style="flex: 1; max-width: 600px; margin: 1rem; color: #333; background-color: #fff; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); position: relative;">
+            <h2 style="font-size: 2rem; color: #003366; margin-bottom: 1rem;">Venice: The City of Romance</h2>
+            <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 1rem;">
+                Embrace the magic of Venice with gondola rides along serene canals, stunning views from Rialto Bridge, and cozy dinners in intimate trattorias. 
+            </p>
+            <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 1rem;">
+                <b>Let the enchanting charm of Venice make your honeymoon truly unforgettable. 💕</b>
+            </p>
+            <a href="#" 
+               style="display: inline-block; text-decoration: none; padding: 0.8rem 2rem; 
+               background-color: #ff6f61; color: white; font-size: 1.2rem; border-radius: 5px; 
+               box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); position: absolute; top: 50%; 
+               right: -30%; transform: translateY(-50%);">
+                Book Now
+            </a>
+        </div>
+    </section>
+    
+    <a href="#" 
+       style="display: inline-block; text-decoration: none; padding: 0.8rem 2rem; 
+       background-color: #ff6f61; color: white; font-size: 1.2rem; border-radius: 5px; 
+       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); position: absolute; top: 50%; 
+       right: -30%; transform: translateY(-50%);">
+        Book Now
+    </a>
+    </center>
+
+
+    <center>
+        <section style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 3rem; background-color: #f9f9f9;">
+            <div style="flex: 1; max-width: 400px; margin: 1rem;">
+                <img src="https://as1.ftcdn.net/v2/jpg/06/27/46/26/1000_F_627462667_7eBH6N4d0Wy57be80vGCH7f6RBNCWCAQ.jpg" 
+                     alt="Honeymoon in Cinque Terre" 
+                     style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); max-height: 300px; object-fit: cover;">
+            </div>
+            <div style="flex: 1; max-width: 600px; margin: 1rem; color: #333; background-color: #fff; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); position: relative;">
+                <h2 style="font-size: 2rem; color: #003366; margin-bottom: 1rem;">Cinque Terre: A Dreamy Escape</h2>
+                <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 1rem;">
+                    Discover the beauty of Cinque Terre with colorful cliffside villages, scenic coastal hikes, and sunsets over the sparkling Mediterranean. 
+                </p>
+                <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 1rem;">
+                    <b>Let the breathtaking landscapes and charm of Cinque Terre make your honeymoon unforgettable. 💕</b>
+                </p>
+                <a href="#" 
+                   style="display: inline-block; text-decoration: none; padding: 0.8rem 2rem; 
+                   background-color: #ff6f61; color: white; font-size: 1.2rem; border-radius: 5px; 
+                   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); position: absolute; top: 50%; 
+                   right: -30%; transform: translateY(-50%);">
+                    Book Now
+                </a>
+            </div>
+        </section>
+        
+        <a href="#" 
+           style="display: inline-block; text-decoration: none; padding: 0.8rem 2rem; 
+           background-color: #ff6f61; color: white; font-size: 1.2rem; border-radius: 5px; 
+           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); position: absolute; top: 50%; 
+           right: -30%; transform: translateY(-50%);">
+            Book Now
+        </a>
+        </center>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 Travel Guide. All rights reserved.</p>
+    </footer>
+  </body>
+  
+</html>

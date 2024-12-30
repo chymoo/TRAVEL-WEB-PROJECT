@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff;
+      color: #333;
+    }/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  padding: 0.5rem 2rem; /* Keep the padding to maintain the same nav bar height */
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+nav .logo {
+  height: 80px; /* Adjusted logo size */
+  width: auto;
+  margin-right: 20px;
+}
+
+/* Flex container for links */
+nav .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem; /* Increased font size for links */
+  margin-right: 2rem;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff6f61;
+  border-bottom: 2px solid #ff6f61;
+  transform: scale(1.1);
+}
+
+nav a.active {
+  color: #ff6f61;
+  font-weight: bold;
+  border-bottom: 2px solid #ff6f61;
+}
+
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .purpose-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns per row */
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .card button {
+      background-color: #0074d9;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .card button:hover {
+      background-color: #005bb5;
+    }
+
+    .tunisia-btn {
+      display: block;
+      background-color: #ff851b;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      margin: 2rem auto 0;
+      width: fit-content;
+      transition: background-color 0.3s;
+    }
+    
+    /* Footer Section */
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+      margin-top: 4rem;
+      font-size: 1rem;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+  .purpose-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .purpose-grid {
+    grid-template-columns: 1fr; /* One column on very small screens */
+  }
+}
+
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-links">
+        <img src="C:\Users\USER\Downloads\travel_guide_logo-removebg-preview (1).png" alt="Travel Guide Logo" class="logo">
+      <a href="home TRAVEL WEB PROJECT.html">Home</a>
+      <a href="TRAVEL WEB PROJECT.html">Purpose</a>
+    </div>
+    <a href="About TRAVEL WEB PROJECT.html">About</a>
+  </nav>
+  <main class="container">
+    <section class="purpose-grid">
+      <div class="card">
+        <img src="file:///C:/Users/USER/Downloads/DALL%C2%B7E%202024-11-18%2015.49.43%20-%20a%20romantic%20couple%20enjoying%20a%20scenic%20beachside%20honeymoon%20at%20sunset,%20with%20soft%20waves%20in%20the%20background,%20featuring%20a%20calm%20and%20intimate%20atmosphere,%20ideal%20.webp" alt="Honeymoon Destination">
+        <h2>Honeymoon</h2>
+        <button onclick="navigateTo('honeymoon%20TRAVEL%20WEB%20PROJECT.html')">Explore</button>
+      </div>
+      <div class="card">
+        <img src="https://img.freepik.com/free-photo/happy-family-couple-children-hiking-countryside-walking-path-excited-boy-riding-dads-neck-full-length-nature-recreation-concept_74855-11779.jpg?t=st=1732044984~exp=1732048584~hmac=bd524f8855c4f6025fe8fb6fc7052c3f5767414c6cf7a3522f1c5086dbecd3d6&w=1060">
+        <h2>Family Vacation</h2>
+        <button onclick="navigateTo('family%20TRAVEL%20WEB%20PROJECT.html')">Explore</button>
+      </div>
+      <div class="card">
+        <img src="https://img.freepik.com/premium-photo/monuments-world-glass-water_117023-837.jpg?w=740" alt="World Tour">
+        <h2>World Tour</h2>
+        <button onclick="navigateTo('world_tour%20TRAVEL%20WEB%20PROJECT.html')">Explore</button>
+      </div>
+      <div class="card">
+        <img src="https://img.freepik.com/free-photo/medium-shot-people-hugging_23-2149181996.jpg?ga=GA1.1.163804140.1731760303&semt=ais_hybrid" alt="Volunteer Travel">
+        <h2>Volunteer Travel</h2>
+        <button onclick="navigateTo('Volunteer%20TRAVEL%20WEB%20PROJECT.html')">Explore</button>
+      </div>
+      <!-- New Travel Categories -->
+      <div class="card">
+        <img src="https://img.freepik.com/free-photo/carpets-market-marrakech_23-2148129794.jpg?ga=GA1.1.163804140.1731760303&semt=ais_hybrid" alt="Cultural Exploration">
+        <h2>Cultural Exploration</h2>
+        <button onclick="navigateTo('culture%20TRAVEL%20WEB%20PROJECT.html')">Explore</button>
+      </div>
+      <div class="card">
+        <img src="https://media.istockphoto.com/id/2151229272/photo/colorful-sunset-viewed-from-the-pink-sea-beach-with-soft-waves.jpg?s=612x612&w=0&k=20&c=yjql_T388J99EvPhGFkH3Kf7-gEvzm5nCp-kptgoDU4=">
+        <h2>Beach Paradise</h2>
+        <button onclick="navigateTo('Beaches%20TRAVEL%20WEB%20PROJECT.html')">Explore</button>
+      </div>
+      <div class="card">
+        <img src="https://img.freepik.com/free-photo/long-shot-woman-enjoying-peace-around-her_23-2148943411.jpg?ga=GA1.1.163804140.1731760303&semt=ais_hybrid" alt="Solo Travel">
+        <h2>Solo Travel</h2>
+        <button onclick="navigateTo('Solo%20TRAVEL%20WEB%20PROJECT.html')">Explore</button>
+      </div>
+      <div class="card">
+        <img src="https://img.freepik.com/free-photo/group-fans-gathered-thge-stadium-cheering-up_1303-18617.jpg?ga=GA1.1.163804140.1731760303&semt=ais_hybrid" alt="Festivals and Events">
+        <h2>Festivals and Events</h2>
+        <button onclick="navigateTo('festivals-events.html')">Explore</button>
+      </div>
+      <div class="card">
+        <img src="https://img.freepik.com/free-photo/three-trendy-european-friends-sitting-boat-having-lunch-drinking-champagne-expressing-joy-pleasure-every-year-they-book-tickets-warm-countries-winter_176420-15425.jpg?ga=GA1.1.163804140.1731760303&semt=ais_hybrid" alt="Cruise Vacation">
+        <h2>Cruise Vacation</h2>
+        <button onclick="navigateTo('cruise-vacation.html')">Explore</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // JavaScript function to navigate to other pages
+    function navigateTo(page) {
+      window.location.href = page;
+    }
+  </script>
+     <!-- Footer Section -->
+     <footer>
+      <p>&copy; 2024 Travel Guide. All rights reserved.</p>
+    </footer>
+</body>
+</html>

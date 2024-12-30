@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Travel Guide</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7fc;
+      color: #333;
+    }
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  padding: 0.5rem 2rem; /* Keep the padding to maintain the same nav bar height */
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+nav .logo {
+  height: 80px; /* Adjusted logo size */
+  width: auto;
+  margin-right: 20px;
+}
+
+/* Flex container for links */
+nav .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem; /* Increased font size for links */
+  margin-right: 2rem;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff6f61;
+  border-bottom: 2px solid #ff6f61;
+  transform: scale(1.1);
+}
+
+nav a.active {
+  color: #ff6f61;
+  font-weight: bold;
+  border-bottom: 2px solid #ff6f61;
+}
+
+
+
+    /* Header Section */
+    header {
+      position: relative;
+      background-image: url('https://img.freepik.com/premium-photo/travel-accessories-items-with-smartphone-color-background_44943-1199.jpg?w=1060');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+    }
+
+    /* Overlay for header text visibility */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    header h1,
+    header p {
+      position: relative;
+      z-index: 2;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 4rem;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    /* Main Section */
+    .main-content {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Search Section */
+    .search-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+      align-items: center;
+    }
+
+    .search-section .search-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .search-section label {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .search-section input {
+      padding: 0.75rem;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px;
+      background-color: white;
+    }
+
+    .search-section button {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      grid-column: span 3;
+      justify-self: center;
+    }
+
+    .search-section button:hover {
+      background-color: #e55b4e;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+      margin-top: 4rem;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.8rem;
+      }
+
+      header p {
+        font-size: 1.2rem;
+      }
+
+      .search-section {
+        grid-template-columns: 1fr;
+      }
+
+      .search-section button {
+        grid-column: span 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+   <!-- Navigation Bar -->
+   <nav>
+    <div class="nav-links">
+        <img src="C:\Users\USER\Downloads\travel_guide_logo-removebg-preview (1).png" alt="Travel Guide Logo" class="logo">
+      <a href="home TRAVEL WEB PROJECT.html">Home</a>
+      <a href="TRAVEL WEB PROJECT.html">Purpose</a>
+    </div>
+    <a href="About TRAVEL WEB PROJECT.html">About</a>
+  </nav>
+  
+  <!-- Header Section -->
+  <header>
+    <div class="overlay"></div>
+    <h1>Welcome to Your Travel Guide</h1>
+    <p>Embark on your next adventure with the best travel deals at your fingertips.</p>
+  </header>
+
+  <!-- Main Content Section -->
+  <main class="main-content">
+    <section class="search-section">
+      <div class="search-item">
+        <label for="destination">Where do you want to go?</label>
+        <input list="destinations" id="destination" placeholder="Select or type a destination">
+        <datalist id="destinations">
+          <option value="Beaches"></option>
+          <option value="Events & Festivals"></option>
+          <option value="Cultures"></option>
+          <option value="World Tour"></option>
+        </datalist>
+      </div>
+      
+
+      <div class="search-item">
+        <label for="nights">How many nights?</label>
+        <input type="int" id="nights" placeholder="Enter number of nights">
+      </div>
+
+      <div class="search-item">
+        <label for="people">How many people?</label>
+        <input type="number" id="people" placeholder="Enter number of people">
+      </div>
+
+      <button onclick="searchTrip()">Search</button>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Travel Guide. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function searchTrip() {
+        const destination = document.getElementById('destination').value;
+        const nights = parseInt(document.getElementById('nights').value);
+        const people = parseInt(document.getElementById('people').value);
+
+        if (destination === "Beaches") {
+            window.location.href = "Beaches%20TRAVEL%20WEB%20PROJECT.html";
+        } else if (destination === "Cultures") {
+            window.location.href = "culture%20TRAVEL%20WEB%20PROJECT.html";
+        } else if (destination === "World Tour") {
+            window.location.href = "world_tour%20TRAVEL%20WEB%20PROJECT.html";
+        } else if (nights >= 15) {
+            window.location.href = "Volunteer%20TRAVEL%20WEB%20PROJECT.html";
+        } else if (people === 1) {
+            window.location.href = "Solo%20TRAVEL%20WEB%20PROJECT.html";
+        } else if (people === 2) {
+            window.location.href = "honeymoon%20TRAVEL%20WEB%20PROJECT.html";
+        } else if (people >= 3 && people <= 6) {
+            window.location.href = "family%20TRAVEL%20WEB%20PROJECT.html";
+        } else {
+            alert("Please select a valid destination, number of nights, or number of people!");
+        }
+    }
+</script>
+
+</body>
+</html>

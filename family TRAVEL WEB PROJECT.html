@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family - Travel Guide</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7fc;
+      color: #333;
+    }
+
+    /* Navigation Bar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #003366;
+      padding: 0.5rem 2rem;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav .logo {
+      height: 80px;
+      width: auto;
+      margin-right: 20px;
+    }
+
+    nav .nav-links {
+      display: flex;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.3rem;
+      margin-right: 2rem;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff6f61;
+      border-bottom: 2px solid #ff6f61;
+      transform: scale(1.1);
+    }
+
+    nav a.active {
+      color: #ff6f61;
+      font-weight: bold;
+      border-bottom: 2px solid #ff6f61;
+    }
+
+    /* Header Section */
+    header {
+      position: relative;
+      background-image: url('https://img.freepik.com/free-photo/family-with-little-daughter-travelling-by-car_1303-17371.jpg?ga=GA1.1.163804140.1731760303&semt=ais_hybrid');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    header h1,
+    header p {
+      position: relative;
+      z-index: 2;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 4rem;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+      margin-top: 4rem;
+      font-size: 1rem;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      nav a {
+        font-size: 1rem;
+        margin-right: 1rem;
+      }
+
+      header {
+        padding: 4rem 1rem;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      header p {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="nav-links">
+        <img src="C:\Users\USER\Downloads\travel_guide_logo-removebg-preview (1).png" alt="Travel Guide Logo" class="logo" alt="Travel Guide Logo" class="logo">
+        <a href="home TRAVEL WEB PROJECT.html">Home</a>
+        <a href="TRAVEL WEB PROJECT.html">Purpose</a>
+      </div>
+      <a href="About%20TRAVEL%20WEB%20PROJECT.html">About</a>
+    </nav>
+    
+    <!-- Header Section -->
+    <header>
+      <div class="overlay"></div>
+      <h1>Welcome to FAMILY trip propositions</h1>
+    </header>
+  
+<center>
+  <section style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 3rem; background-color: #f9f9f9;">
+      <div style="flex: 1; max-width: 400px; margin: 1rem;">
+          <img src="https://img.freepik.com/premium-photo/happy-family-travellers-top-xiabre-mountain-ulla-river-mouth-atlantic-sea_709963-3.jpg?ga=GA1.1.163804140.1731760303&semt=ais_hybrid" 
+               alt="family trio in new zeeland" 
+               style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); max-height: 300px; object-fit: cover;">
+      </div>
+      <div style="flex: 1; max-width: 600px; margin: 1rem; color: #333; background-color: #fff; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); position: relative;">
+          <h2 style="font-size: 2rem; color: #003366; margin-bottom: 1rem;">New Zealand: A Land of Wonders</h2>
+          <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 1rem;">
+              Embark on an unforgettable family adventure through New Zealand’s stunning landscapes—majestic mountains, lush rainforests, and pristine beaches. From thrilling outdoor activities to rich Maori cultural experiences 
+          </p>
+          <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 1rem;">
+              <b>New Zealand offers endless exploration and fun for all ages. 🌍</b>
+          </p>
+          <a href="#" 
+             style="display: inline-block; text-decoration: none; padding: 0.8rem 2rem; 
+             background-color: #ff6f61; color: white; font-size: 1.2rem; border-radius: 5px; 
+             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); position: absolute; top: 50%; 
+             right: -30%; transform: translateY(-50%);">
+              Book Now
+          </a>
+      </div>
+  </section>
+  
+  <a href="#" 
+     style="display: inline-block; text-decoration: none; padding: 0.8rem 2rem; 
+     background-color: #ff6f61; color: white; font-size: 1.2rem; border-radius: 5px; 
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); position: absolute; top: 50%; 
+     right: -30%; transform: translateY(-50%);">
+      Book Now
+  </a>
+  </center>
+ <center>
+<section style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 3rem; background-color: #f9f9f9;">
+    <div style="flex: 1; max-width: 400px; margin: 1rem;">
+        <img src="https://img.freepik.com/free-photo/shanghai-skyline-sunny-day-china_1127-3129.jpg?ga=GA1.1.163804140.1731760303&semt=ais_hybrid" 
+             alt="family trip in Doha" 
+             style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); max-height: 300px; object-fit: cover;">
+    </div>
+    <div style="flex: 1; max-width: 600px; margin: 1rem; color: #333; background-color: #fff; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); position: relative;">
+        <h2 style="font-size: 2rem; color: #003366; margin-bottom: 1rem;">Doha: The Pearl of the Gulf</h2>
+        <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 1rem;">
+            Discover the charm of Doha, where modern luxury meets rich tradition. Explore the vibrant Souq Waqif, and indulge in cultural experiences at the Museum of Islamic Art. 
+        </p>
+        <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 1rem;">
+            <b>The Pearl of the Gulf is ready to offer your family an unforgettable journey filled with adventure and wonder. 🌟</b>
+        </p>
+        <a href="#" 
+           style="display: inline-block; text-decoration: none; padding: 0.8rem 2rem; 
+           background-color: #ff6f61; color: white; font-size: 1.2rem; border-radius: 5px; 
+           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); position: absolute; top: 50%; 
+           right: -30%; transform: translateY(-50%);">
+            Book Now
+        </a>
+    </div>
+</section>
+</center>
+
+<center>
+    <section style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 3rem; background-color: #f9f9f9;">
+        <div style="flex: 1; max-width: 400px; margin: 1rem;">
+            <img src="https://img.freepik.com/premium-photo/golden-pavilion-kinkakuji-temple-with-red-autumn-leaves-kyoto-japan_167657-203.jpg?ga=GA1.1.163804140.1731760303&semt=ais_hybrid" 
+                 alt="family trip in Japan" 
+                 style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); max-height: 300px; object-fit: cover;">
+        </div>
+        <div style="flex: 1; max-width: 600px; margin: 1rem; color: #333; background-color: #fff; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); position: relative;">
+            <h2 style="font-size: 2rem; color: #003366; margin-bottom: 1rem;">Kyoto: The Heart of Japan</h2>
+            <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 1rem;">
+                Step into the timeless beauty of Kyoto, where ancient temples, serene gardens, and traditional tea houses await. Explore the iconic Kinkaku-ji, stroll through the Arashiyama Bamboo Grove, and immerse your family in the peaceful atmosphere of Japan's cultural capital. 
+            </p>
+            <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 1rem;">
+                <b>Kyoto offers an unforgettable family adventure, blending history, nature, and culture in every corner. 🍃</b>
+            </p>
+            <a href="#" 
+               style="display: inline-block; text-decoration: none; padding: 0.8rem 2rem; 
+               background-color: #ff6f61; color: white; font-size: 1.2rem; border-radius: 5px; 
+               box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); position: absolute; top: 50%; 
+               right: -30%; transform: translateY(-50%);">
+                Book Now
+            </a>
+        </div>
+    </section>
+    
+    <a href="#" 
+       style="display: inline-block; text-decoration: none; padding: 0.8rem 2rem; 
+       background-color: #ff6f61; color: white; font-size: 1.2rem; border-radius: 5px; 
+       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); position: absolute; top: 50%; 
+       right: -30%; transform: translateY(-50%);">
+        Book Now
+    </a>
+    </center>
+
+
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 Travel Guide. All rights reserved.</p>
+    </footer>
+  </body>
+  
+</html>

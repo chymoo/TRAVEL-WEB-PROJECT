@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wold tour - Travel Guide</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7fc;
+      color: #333;
+    }
+
+    /* Navigation Bar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #003366;
+      padding: 0.5rem 2rem;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav .logo {
+      height: 80px;
+      width: auto;
+      margin-right: 20px;
+    }
+
+    nav .nav-links {
+      display: flex;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.3rem;
+      margin-right: 2rem;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff6f61;
+      border-bottom: 2px solid #ff6f61;
+      transform: scale(1.1);
+    }
+
+    nav a.active {
+      color: #ff6f61;
+      font-weight: bold;
+      border-bottom: 2px solid #ff6f61;
+    }
+
+    /* Header Section */
+    header {
+      position: relative;
+      background-image: url('https://img.freepik.com/premium-photo/famous-monument-world_117023-92.jpg?uid=R85902698&ga=GA1.1.163804140.1731760303');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    header h1,
+    header p {
+      position: relative;
+      z-index: 2;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 4rem;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+      margin-top: 4rem;
+      font-size: 1rem;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      nav a {
+        font-size: 1rem;
+        margin-right: 1rem;
+      }
+
+      header {
+        padding: 4rem 1rem;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      header p {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="nav-links">
+        <img src="C:\Users\USER\Downloads\travel_guide_logo-removebg-preview (1).png" alt="Travel Guide Logo" class="logo" alt="Travel Guide Logo" class="logo">
+        <a href="home TRAVEL WEB PROJECT.html">Home</a>
+        <a href="TRAVEL WEB PROJECT.html">Purpose</a>
+      </div>
+      <a href="About%20TRAVEL%20WEB%20PROJECT.html">About</a>
+    </nav>
+    
+    <!-- Header Section -->
+    <header>
+      <div class="overlay"></div>
+      <h1>Welcome to World tour proposition</h1>
+    </header>
+    <section style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 3rem; background-color: #f9f9f9;">
+        <!-- Image Section -->
+        <div style="flex: 1; max-width: 400px; margin: 1rem;">
+          <img src="https://img.freepik.com/free-photo/travel-adventure-with-baggage_23-2149153255.jpg?t=st=1732368783~exp=1732372383~hmac=e0e941bcc5197c548bb81f86786d8a727e043ab1e923cd57d4849fd5f4181d09&w=360" 
+               alt="family trio in New Zealand" 
+               style="width: 100%; height: auto; border-radius: 15px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); object-fit: cover;">
+        </div>
+      
+        <!-- Content Section -->
+        <div style="flex: 1; max-width: 600px; margin: 1rem; color: #333; background-color: #fff; padding: 2rem; border-radius: 15px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); position: relative;">
+          <h2 style="font-size: 2rem; color: #003366; margin-bottom: 1rem; text-align: center;">World Tour: 30 Days of Unforgettable Adventures</h2>
+          <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; text-align: justify;">
+            Embark on a thrilling journey around the globe, exploring diverse cultures, iconic landmarks, and natural wonders. Here’s your perfectly planned itinerary:
+          </p>
+          <ul style="font-size: 1rem; line-height: 1.8; list-style: none; padding: 0;">
+            <li><b>Tunisia (3 Days):</b> Explore Carthage, Sidi Bou Said, and Tunis.</li>
+            <li><b>France (4 Days):</b> Eiffel Tower, Louvre Museum, and Montmartre in Paris.</li>
+            <li><b>Italy (3 Days):</b> Rome’s Colosseum, Vatican City, and Italian cuisine.</li>
+            <li><b>Switzerland (2 Days):</b> Alpine views and Zurich’s old town.</li>
+            <li><b>Dubai (3 Days):</b> Burj Khalifa, desert safari, and Dubai Mall.</li>
+            <li><b>Japan (4 Days):</b> Kyoto’s temples, Tokyo buzz, and sushi delights.</li>
+            <li><b>Thailand (3 Days):</b> Bangkok’s Grand Palace and floating markets.</li>
+            <li><b>Australia (3 Days):</b> Sydney Opera House, Bondi Beach, and wildlife.</li>
+            <li><b>New Zealand (3 Days):</b> Rotorua’s landscapes and Maori culture.</li>
+            <li><b>USA (3 Days):</b> Times Square, Central Park, and Statue of Liberty.</li>
+          </ul>
+          <p style="font-size: 1rem; line-height: 1.8; text-align: justify; margin-top: 1rem;">
+            This comprehensive itinerary balances culture, adventure, and relaxation while ensuring efficient travel between destinations. 🌍✨
+          </p>
+          <!-- Button Positioned to the Right -->
+          <a href="#" 
+   style="display: inline-block; text-decoration: none; padding: 0.8rem 2rem; 
+   background-color: #ff6f61; color: white; font-size: 1.2rem; border-radius: 5px; 
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); position: absolute; top: 50%; 
+   right: -30%; transform: translateY(-50%);">
+    Book Now
+</a>
+        </div>
+      </section>
+      
+      
+
+
+
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 Travel Guide. All rights reserved.</p>
+    </footer>
+  </body>
+  
+</html>
